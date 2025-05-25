@@ -1,0 +1,33 @@
+/* Contenedor del combobox */
+.combobox-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo del combobox */
+.combobox-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 2px solid #0078d4; /* Color elegante */
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+/* Efecto hover */
+.combobox-select:hover {
+  border-color: #005a9e; /* Azul oscuro */
+  box-shadow: 0px 4px 6px rgba(0, 90, 158, 0.2);
+}
+
+/* Efecto focus */
+.combobox-select:focus {
+  outline: none;
+  border-color: #005a9e;
+  box-shadow: 0px 4px 6px rgba(0, 90, 158, 0.4);
+}

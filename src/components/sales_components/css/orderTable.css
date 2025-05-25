@@ -1,0 +1,39 @@
+.orders-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-header,
+.orders-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.orders-header {
+  background-color: #001757;
+  color: white;
+}
+
+.orders-cell {
+  background-color: #f0f8ff;
+}
+
+.orders-refresh-btn {
+  padding: 10px 15px;
+  background-color: #001757;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.orders-refresh-btn:hover {
+  background-color: #004c99;
+}

@@ -1,0 +1,55 @@
+/* Para asegurar que el footer se mantenga al fondo */
+html,
+body {
+  height: 100%; /* Aseguramos que ocupen toda la altura de la ventana */
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* El contenedor raíz ocupa toda la altura */
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #555;
+  margin-top: auto; /* Empuja el footer hacia el final del contenedor */
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #87cefa;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: #aaa;
+}

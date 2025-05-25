@@ -1,0 +1,58 @@
+/* Estilos generales */
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd; /* Azul claro */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Contenedor del menú */
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del menú */
+.menu-container h1 {
+  color: #1565c0; /* Azul fuerte */
+}
+
+/* Categoría de comida */
+.categoria {
+  margin-top: 20px;
+}
+
+.categoria h2 {
+  background-color: #1565c0; /* Azul fuerte */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Lista de platillos */
+.lista-items {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-items li {
+  background: #bbdefb; /* Azul suave */
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.lista-items li:hover {
+  background: #90caf9; /* Azul más claro al pasar el mouse */
+}
+
+strong {
+  color: #0d47a1; /* Azul oscuro */
+}

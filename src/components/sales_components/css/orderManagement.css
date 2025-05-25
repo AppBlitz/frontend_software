@@ -1,0 +1,109 @@
+.orders-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+.orders-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orders-section {
+  width: 48%;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  border: 1px solid #007bff;
+  text-align: center;
+}
+
+.orders-table th {
+  background-color: #0056b3;
+  color: white;
+}
+
+.orders-menu {
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre label e input */
+  margin: 5px 0;
+  width: 100%;
+  justify-content: space-between; /* Distribuye los elementos */
+}
+.selected-row {
+  background-color: #d0e3ff;
+  font-weight: bold;
+}
+
+.orders-btn {
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.orders-btn:hover {
+  background-color: #0056b3;
+}
+
+.orders-btn.delete {
+  background-color: #dc3545;
+}
+
+.orders-btn.delete:hover {
+  background-color: #b02a37;
+}
+
+.orders-definition {
+  border: 1px solid #007bff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+input[type="number"] {
+  width: 120px; /* 💙 Tamaño uniforme para todos los campos */
+  padding: 5px;
+  border: 1px solid #007bff;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Estilos para los botones */
+.orders-btn {
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.orders-btn:hover {
+  background-color: #0056b3;
+}
+
+.orders-btn.delete {
+  background-color: #dc3545;
+}
+
+.orders-btn.delete:hover {
+  background-color: #b02a37;
+}
