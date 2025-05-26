@@ -3,7 +3,7 @@ import "../css/orderManagement.css";
 import ActionButton from "../../generics/button_action";
 import Routes_api_java from "../../../routes/Routes_apis_java";
 import Combobox from "../../generics/combobox";
-
+import { useLocation } from "react-router-dom";
 // Definición de la interfaz para los elementos de pedido
 interface MenuItem {
   id: string;
@@ -38,6 +38,7 @@ interface PlatilloItem {
 
 interface GuardarMenu {
   name: string;
+  idkitchenEmployee: string | null;
   description: string;
   items: {
     recipe: string | null;
@@ -149,11 +150,15 @@ const OrdersManagement: React.FC = () => {
     }
     setMenuItems(menuItems.filter(element => element.id !== id));
   };
+  const location = useLocation(); // Inicializamos useNavigate
+  const queryParams = new URLSearchParams(location.search);
+  const userId = queryParams.get("id");
 
   const guardarMenu = async () => {
     try {
       const menuData: GuardarMenu = {
         name: "prueba2", // Define un valor válido para el nombre
+        idkitchenEmployee: userId || null,
         description: "chao mundo", // Define una descripción adecuada
         items: menuItems.map(item => ({
           recipe: item.tipo === "producto" ? null : item.id || null, // Si es producto, recipe es null

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../../components/sales_components/navbars/navbar_shopCart"
 import { Footer } from "../../../components/sales_components/footer_sales";
+import PedidoView from "../../../components/sales_components/menu/pedidoView";
 
 const ShopCart_details: React.FC = () => {
   const location = useLocation();
@@ -20,6 +21,7 @@ const ShopCart_details: React.FC = () => {
   return (
     <div>
       <Navbar userRole={userRole || ""} userId={userId || ""} token={token || ""} />
+      <PedidoView />
       <Footer />
     </div>
   );
